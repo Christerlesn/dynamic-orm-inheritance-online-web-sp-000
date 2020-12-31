@@ -4,6 +4,7 @@ require 'sqlite3'
 require_relative "../lib/interactive_record.rb"
 require_relative "../lib/song.rb"
 require_relative "../config/environment.rb"
+require_relative "../lib/artist.rb"
 
 song = Song.new(name: "Hello", album: "25")
 puts "song name: " + song.name
@@ -12,4 +13,8 @@ song.save
 
 puts Song.find_by_name("Hello")
 
+artist = Artist.new(name: "Taylor Swift", age: 30)
+artist.save
+
+puts Artist.find_by_name("Taylor Swift")
 # DB[:conn].execute("SELECT * FROM songs")
