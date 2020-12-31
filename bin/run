@@ -10,7 +10,7 @@ require_relative "../lib/artist.rb"
 # puts "song name: " + song.name
 # puts "song album: " + song.album
 # song.save
-# 
+#
 # puts Song.find_by_name("Hello")
 
 artist = Artist.new(name: "Taylor Swift", age: 30)
